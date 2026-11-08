@@ -5,7 +5,6 @@ import streamlit as st
 # Set Streamlit Page Configuration
 st.set_page_config(
     page_title="Union City Water System Simulator",
-    page_icon="🚰",
     layout="wide",
 )
 
@@ -19,7 +18,7 @@ P = {
 }
 
 # --- Sidebar Controls ---
-st.sidebar.title("🎛️ Simulation Controls")
+st.sidebar.title("Simulation Controls")
 
 population = st.sidebar.number_input(
     "Population", min_value=1000, value=70000, step=1000
@@ -133,7 +132,7 @@ df_results, final_zones, avg_demand = run_simulation(
 )
 
 # --- Main Dashboard Visuals ---
-st.title("🚰 Union City Zoned Water System Simulator")
+st.title("Union City Zoned Water System Simulator")
 st.markdown(
     "Interactive model testing zone redundancy, intertie sharing, and power outage resilience."
 )
